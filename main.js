@@ -1,4 +1,3 @@
-/*
 // OBJETO DATE
 let fechaActual = new Date();
 console.log(fechaActual);
@@ -15,27 +14,24 @@ console.log(+fechaActual)
 let fechaConTimestamp = new Date(1627033033900);
 console.log(fechaConTimestamp);
 
-
 //STRING
-// let fechaConString = new Date("2021 jan 23 23:00:14");
-// console.log(fechaConString);
+let fechaConString = new Date("2021 jan 23 23:00:14");
+console.log(fechaConString);
 
-let fechaConString = new Date("jan 23 2021");
+let fechaConString2 = new Date("jan 23 2021");
 console.log(fechaConString);
 
 // Date(año, mes, fecha, horas, minutos, segundos, ms)
 let fechaConParametros = new Date(2024, 12, 01);
 console.log(fechaConParametros);
 
-
-//Setters
+//SETTERS
 fechaConParametros.setFullYear(1980);
 
 console.log(fechaConParametros);
-*/
 
-// Ejercicio: Mostrar la fecha actual con los días de la seman en español
-// Domingo, 25 de julio de 2021
+// EJERCICIO 1: Mostrar la fecha actual con los días de la semana en español con el siguiente formato: Domingo, 25 de julio de 2021
+
 let fecha = new Date(1984,09,28);
 console.log(fecha.getDay());
 console.log(fecha.getDate());
@@ -51,3 +47,8 @@ let mesAnyo = ['Enero','Febrero', 'Marzo','abril','Mayo','Junio','Julio','Agosto
 console.log(mesAnyo[fecha.getMonth()]);
 
 console.log(`${diaSemana[fecha.getDay()]}, ${fecha.getDate()} de ${mesAnyo[fecha.getMonth()]} de ${fecha.getFullYear()}`);
+
+// EJERCICIO 2: Mostrar la hora actual en formato 03:15:15
+
+let hora = new Date();
+console.log(hora.toLocaleTimeString());
