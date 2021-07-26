@@ -32,7 +32,7 @@ console.log(fechaConParametros);
 
 // EJERCICIO 1: Mostrar la fecha actual con los días de la semana en español con el siguiente formato: Domingo, 25 de julio de 2021
 
-let fecha = new Date(1984,09,28);
+let fecha = new Date();
 console.log(fecha.getDay());
 console.log(fecha.getDate());
 console.log(fecha.getMonth());
